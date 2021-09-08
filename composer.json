@@ -36,7 +36,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "Laravel\\Octane\\": "src"
+            "Laravel\\Octane\\": "src",
+            "Upscale\\": "src/Upscale/"
         }
     },
     "autoload-dev": {
