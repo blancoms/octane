@@ -15,9 +15,10 @@
     ],
     "require": {
         "php": "^8.0",
-        "laravel/framework": "^8.37",
         "laminas/laminas-diactoros": "^2.5",
-        "symfony/psr-http-message-bridge": "^2.0"
+        "laravel/framework": "^8.37",
+        "symfony/psr-http-message-bridge": "^2.0",
+        "upscale/swoole-blackfire": "^3.1"
     },
     "require-dev": {
         "guzzlehttp/guzzle": "^7.2",

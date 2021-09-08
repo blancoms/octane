@@ -217,4 +217,6 @@ return [
 
     'max_execution_time' => 30,
 
+    'blackfire' => 0,
+
 ];
