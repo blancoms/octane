@@ -23,7 +23,7 @@ $server->set(array_merge(
 ));
 
 if ($config['blackfire']) {
-    $profiler = new \Upscale\Swoole\Blackfire\Profiler();
+    $profiler = new Upscale\Swoole\Blackfire\Profiler();
     $profiler->instrument($server);
 }
 
