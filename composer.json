@@ -1,11 +1,11 @@
 {
-    "name": "laravel/octane",
+    "name": "blancoms/octane",
     "description": "Supercharge your Laravel application's performance.",
     "keywords": ["laravel", "octane", "roadrunner", "swoole"],
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/laravel/octane/issues",
-        "source": "https://github.com/laravel/octane"
+        "issues": "https://github.com/blancoms/octane/issues",
+        "source": "https://github.com/blancoms/octane"
     },
     "authors": [
         {
