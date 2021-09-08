@@ -22,4 +22,9 @@ $server->set(array_merge(
     $config['swoole']['options'] ?? []
 ));
 
+if ($config['blackfire']) {
+    $profiler = new \Upscale\Swoole\Blackfire\Profiler();
+    $profiler->instrument($server);
+}
+
 return $server;
