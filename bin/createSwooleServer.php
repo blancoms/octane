@@ -1,5 +1,7 @@
 <?php
 
+use Laravel\Octane\SwooleBlackfireFactory;
+
 $config = $serverState['octaneConfig'];
 
 try {
@@ -23,7 +25,7 @@ $server->set(array_merge(
 ));
 
 if ($config['blackfire']) {
-    $profiler = new Upscale\Swoole\Blackfire\Profiler();
+    $profiler = SwooleBlackfireFactory::profiler();
     $profiler->instrument($server);
 }
 
