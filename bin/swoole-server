@@ -8,6 +8,7 @@ use Laravel\Octane\Swoole\Handlers\OnWorkerStart;
 use Laravel\Octane\Swoole\ServerStateFile;
 use Laravel\Octane\Swoole\SwooleExtension;
 use Laravel\Octane\Swoole\WorkerState;
+use Laravel\Octane\SwooleBlackfireFactory;
 use Swoole\Http\Server;
 use Swoole\Timer;
 
@@ -159,5 +160,11 @@ $server->on('workerstop', function () use ($workerState) {
 
     $workerState->worker->terminate();
 });
+
+$serverState['octaneConfig'];
+if ($config['blackfire']) {
+    $profiler = SwooleBlackfireFactory::profiler();
+    $profiler->instrument($server);
+}
 
 $server->start();
